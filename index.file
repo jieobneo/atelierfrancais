@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>atelier</title>
+
+<!-- 필기체 및 본문 글꼴 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F1E9;
+    color: #443B33;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+}
+
+/* 전체 화면 */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 35px;
+}
+
+/* 제목 */
+header {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(65px, 10vw, 105px);
+    font-weight: 400;
+    color: #574436;
+    line-height: 1.4;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #9A8978;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+/* 구분선 */
+.line {
+    width: 55px;
+    height: 1px;
+    background: #C8B9A7;
+    margin: 35px auto;
+}
+
+/* 연습문제 영역 */
+.exercise-section {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.exercise-card {
+    background: #FBF9F4;
+    border: 1px solid #E5DDD1;
+    border-radius: 5px;
+    padding: 35px 38px;
+    transition: all 0.3s ease;
+}
+
+.exercise-card:hover {
+    border-color: #B8A38C;
+    transform: translateY(-3px);
+}
+
+.number {
+    font-family: 'Playfair Display', serif;
+    color: #A38D77;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.exercise-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #493D33;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 14px;
+    color: #8C8073;
+    line-height: 1.8;
+}
+
+.arrow {
+    display: flex;
+    justify-content: flex-end;
+    color: #A38D77;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: #A99B8B;
+    letter-spacing: 1px;
+}
+
+/* 모바일 */
+@media (max-width: 600px) {
+    .container {
+        padding: 45px 20px;
+    }
+
+    header {
+        margin-bottom: 55px;
+    }
+
+    .exercise-card {
+        padding: 27px 24px;
+    }
+
+    .exercise-title {
+        font-size: 22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1 class="logo">atelier</h1>
+        <p class="subtitle">Le français autrement</p>
+        <div class="line"></div>
+    </header>
+
+    <main class="exercise-section">
+
+        <article class="exercise-card">
+
+            <p class="number">01 — GRAMMAIRE · A2</p>
+
+            <h2 class="exercise-title">
+                Passé composé et imparfait
+            </h2>
+
+            <p class="description">
+                Exercices pour distinguer et utiliser
+                les deux temps du passé.
+            </p>
+
+            <div class="arrow">→</div>
+
+        </article>
+
+    </main>
+
+    <footer>
+        ATELIER · APPRENDRE LE FRANÇAIS
+    </footer>
+
+</div>
+
+</body>
+</html>
