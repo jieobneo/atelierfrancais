@@ -1,69 +1,58 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>atelier</title>
+<title>ATELIER FRANÇAIS</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Pacifico&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-/* RESET */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* BACKGROUND */
-
 body {
-    background-color: #F5F1E9;
+    background: #F5F1E9;
     color: #443B33;
     font-family: 'DM Sans', sans-serif;
     min-height: 100vh;
 }
 
-/* MAIN CONTAINER */
-
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 35px 40px;
+    margin: auto;
+    padding: 55px 40px;
 }
 
-/* TITLE */
+/* MAIN TITLE */
 
 header {
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 65px;
 }
 
 .logo {
-    font-family: 'Pacifico', cursive;
-    font-size: clamp(280px, 45vw, 600px);
-    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(65px, 10vw, 120px);
+    font-weight: 700;
     color: #574436;
+    letter-spacing: 2px;
     line-height: 1.2;
-    letter-spacing: -8px;
 }
 
-/* EXERCISE SECTION */
+/* EXERCISE */
 
 .exercise-section {
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto;
 }
-
-/* EXERCISE CARD */
 
 .exercise-card {
     background: #FBF9F4;
@@ -71,11 +60,9 @@ header {
     border-radius: 5px;
     padding: 35px 38px;
     min-height: 200px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     transition: all 0.3s ease;
 }
 
@@ -84,32 +71,48 @@ header {
     transform: translateY(-3px);
 }
 
-/* EXERCISE NUMBER */
+/* CATEGORY LABELS */
 
-.number {
-    font-family: 'Playfair Display', serif;
-    color: #A38D77;
-    font-size: 18px;
-    letter-spacing: 2px;
-    margin-bottom: 18px;
+.labels {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.label {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.grammar {
+    background: #285D54;
+    color: #FFFFFF;
+}
+
+.level {
+    background: #DCE8E3;
+    color: #285D54;
 }
 
 /* EXERCISE TITLE */
 
 .exercise-title {
     font-family: 'Playfair Display', serif;
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 600;
     color: #493D33;
     line-height: 1.3;
     margin-bottom: 12px;
 }
 
-/* DESCRIPTION */
-
 .description {
     font-size: 19px;
-    color: #8C8073;
+    color: #766B60;
     line-height: 1.8;
 }
 
@@ -130,37 +133,36 @@ footer {
     font-family: 'Playfair Display', serif;
     font-size: 12px;
     color: #A99B8B;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 /* MOBILE */
 
 @media (max-width: 600px) {
-
     .container {
-        padding: 30px 18px;
+        padding: 35px 18px;
     }
 
     header {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .logo {
-        font-size: 150px;
-        letter-spacing: -4px;
+        font-size: 43px;
+        letter-spacing: 0;
     }
 
     .exercise-card {
-        padding: 25px 20px;
+        padding: 25px 18px;
         min-height: 170px;
     }
 
-    .number {
-        font-size: 13px;
+    .label {
+        font-size: 11px;
     }
 
     .exercise-title {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .description {
@@ -169,11 +171,9 @@ footer {
 
     .arrow {
         font-size: 42px;
-        margin-left: 12px;
+        margin-left: 10px;
     }
-
 }
-
 </style>
 </head>
 
@@ -181,39 +181,40 @@ footer {
 
 <div class="container">
 
-    <header>
-        <h1 class="logo">atelier</h1>
-    </header>
+<header>
+    <h1 class="logo">ATELIER FRANÇAIS</h1>
+</header>
 
-    <main class="exercise-section">
+<main class="exercise-section">
 
-        <article class="exercise-card">
+    <article class="exercise-card">
 
-            <div class="exercise-content">
+        <div class="exercise-content">
 
-                <p class="number">
-                    01 — GRAMMAIRE · A2
-                </p>
-
-                <h2 class="exercise-title">
-                    Passé composé ou imparfait ?
-                </h2>
-
-                <p class="description">
-                    Choisissez le temps qui convient.
-                </p>
-
+            <div class="labels">
+                <span class="label grammar">GRAMMAIRE</span>
+                <span class="label level">A2</span>
             </div>
 
-            <div class="arrow">→</div>
+            <h2 class="exercise-title">
+                Passé composé ou imparfait ?
+            </h2>
 
-        </article>
+            <p class="description">
+                Choisissez le temps qui convient.
+            </p>
 
-    </main>
+        </div>
 
-    <footer>
-        ATELIER
-    </footer>
+        <div class="arrow">→</div>
+
+    </article>
+
+</main>
+
+<footer>
+    ATELIER FRANÇAIS
+</footer>
 
 </div>
 
